@@ -1,0 +1,281 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:id="@+id/rootLayout"-->
+<!--    android:background="@android:color/white"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/ibLoginSettings"-->
+<!--        android:background="@color/transparent"-->
+<!--        android:layout_width="@dimen/icon_size"-->
+<!--        android:layout_height="@dimen/icon_size"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:src="@drawable/ic_setting_"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:contentDescription="@null"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:layout_alignParentEnd="true"/>-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/logoAndLoginButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_below="@+id/ibLoginSettings">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/ivLoginLogo"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:src="@drawable/logo"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:contentDescription="@null"/>-->
+<!--    </RelativeLayout>-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rlEditTexts"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_below="@+id/logoAndLoginButton">-->
+<!--        <View-->
+<!--            android:id="@+id/beforeFirstLine"-->
+<!--            android:background="@color/light_light_gray"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"/>-->
+<!--        <com.spika.punkpanda.view.CustomEditText-->
+<!--            android:id="@+id/etOrganization"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:padding="15dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/enter_id"-->
+<!--            android:layout_below="@+id/beforeFirstLine"-->
+<!--            android:inputType="textNoSuggestions"/>-->
+<!--        <View-->
+<!--            android:id="@+id/firstLine"-->
+<!--            android:background="@color/light_light_gray"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_below="@+id/etOrganization"/>-->
+<!--        <com.spika.punkpanda.view.CustomEditText-->
+<!--            android:id="@+id/etUserName"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:padding="15dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/enter_username"-->
+<!--            android:layout_below="@+id/firstLine"-->
+<!--            android:inputType="textNoSuggestions"/>-->
+<!--        <View-->
+<!--            android:id="@+id/secondLine"-->
+<!--            android:background="@color/light_light_gray"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_below="@+id/etUserName"/>-->
+<!--        <com.spika.punkpanda.view.CustomEditText-->
+<!--            android:id="@+id/etPassword"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:padding="15dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/enter_avatar_url"-->
+<!--            android:layout_toLeftOf="@+id/showPass"-->
+<!--            android:layout_below="@+id/secondLine"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:layout_toStartOf="@+id/showPass"/>-->
+<!--        <com.spika.punkpanda.view.CustomButton-->
+<!--            android:textSize="@dimen/small_text_view_text_size"-->
+<!--            android:textColor="@color/default_to_best_gray"-->
+<!--            android:id="@+id/showPass"-->
+<!--            android:background="@color/trans"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/show"-->
+<!--            android:layout_alignTop="@+id/etPassword"-->
+<!--            android:layout_alignBottom="@+id/etPassword"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentEnd="true"/>-->
+<!--        <View-->
+<!--            android:id="@+id/thirdLine"-->
+<!--            android:background="@color/light_light_gray"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_below="@+id/etPassword"/>-->
+<!--        <CheckBox-->
+<!--            android:textColor="@color/default_color"-->
+<!--            android:id="@+id/cbRememberMe"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:checked="true"-->
+<!--            android:text="@string/remember_me"-->
+<!--            android:layout_below="@+id/thirdLine"-->
+<!--            android:layout_marginStart="15dp"/>-->
+<!--        <com.spika.punkpanda.view.CustomButton-->
+<!--            android:id="@+id/buttonForgotUser"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/forgot_password"-->
+<!--            android:layout_below="@+id/cbRememberMe"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            style="@style/ButtonWithoutBackground"/>-->
+<!--        <com.spika.punkpanda.view.CustomTextView-->
+<!--            android:textSize="@dimen/default_text_view_text_size"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:gravity="center"-->
+<!--            android:id="@+id/tvSignUp"-->
+<!--            android:background="@drawable/selector_orange_button"-->
+<!--            android:paddingTop="8dp"-->
+<!--            android:paddingBottom="8dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:text="@string/sign_up"-->
+<!--            android:layout_below="@+id/buttonForgotUser"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginEnd="15dp"/>-->
+<!--    </RelativeLayout>-->
+<!--    <com.spika.punkpanda.view.CustomTextView-->
+<!--        android:id="@+id/tvLogin"-->
+<!--        android:background="@drawable/transparent_with_light_gray_border"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:paddingTop="8dp"-->
+<!--        android:paddingRight="20dp"-->
+<!--        android:paddingBottom="8dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:text="@string/login"-->
+<!--        android:textSize="@dimen/default_text_view_text_size"-->
+<!--        android:textColor="@color/edit_text_hint_color"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_alignParentEnd="true"/>-->
+<!--</RelativeLayout>-->
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/configData"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/labelConfig"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enable Config"
+                android:textSize="15sp"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switchEnableConfig"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/apiUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Api url"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/socketUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Socket url"
+            android:enabled="false"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/configData"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Data"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/idOfUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="id"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/nameOfUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="url of avatar"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/roomId"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="room id"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/startChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Chat"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

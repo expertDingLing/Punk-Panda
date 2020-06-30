@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "2112749165",
+    "firebase_url": "https://punk-panda.firebaseio.com",
+    "project_id": "punk-panda",
+    "storage_bucket": "punk-panda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2112749165:android:af70c25477b211a5624964",
+        "android_client_info": {
+          "package_name": "com.spika.punkpanda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2112749165-vsqah6fvb7cgrehf4jh09rsf85id2sj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQpRLXjHSqXYtChtrFaLJO-3hFgRkcz_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2112749165-vsqah6fvb7cgrehf4jh09rsf85id2sj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
